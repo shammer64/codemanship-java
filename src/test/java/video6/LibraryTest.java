@@ -15,6 +15,7 @@ import static org.mockito.Mockito.verify;
     and enable swapping out of the implementation
     - Identify dependencies and their interfaces
     - When finished/mature at top level, drill down into each dependency
+    - "Fake it until we make it."
  */
 public class LibraryTest {
 
