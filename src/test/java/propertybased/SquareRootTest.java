@@ -22,13 +22,13 @@ public class SquareRootTest {
     @ParameterizedTest
     @MethodSource("parametersForSquareRootTest")
     public void squareRootUsingBabylonianMethod_2(double operand, double root) {
-        assertEquals(root, Maths.sqrt(operand), 0.00000000001);
+        assertEquals(root, Maths.sqrt(operand), 1E-10);
     }
 
     @ParameterizedTest
     @MethodSource("parametersForSquareRootTest")
     public void squareRootUsingBabylonianMethod_3(double operand, double root) {
-        assertEquals(operand, Maths.sqrt(operand) * Maths.sqrt(operand), 0.00000000001);
+        assertEquals(operand, Maths.sqrt(operand) * Maths.sqrt(operand), 1E-10);
     }
 
     private static Stream<Arguments> parametersForSquareRootTest() {
@@ -38,7 +38,7 @@ public class SquareRootTest {
     @ParameterizedTest
     @MethodSource("parametersAsFractionsForSquareRootTest")
     public void squareRootUsingBabylonianMethod_4(double operand) {
-        assertEquals(operand, Maths.sqrt(operand) * Maths.sqrt(operand), 0.00000000001);
+        assertEquals(operand, Maths.sqrt(operand) * Maths.sqrt(operand), 1E-10);
     }
 
     private static Stream<Arguments> parametersAsFractionsForSquareRootTest() {
